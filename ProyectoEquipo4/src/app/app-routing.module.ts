@@ -8,12 +8,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { VerificarCorreoComponent } from './components/verificar-correo/verificar-correo.component';
 import { RecuperarPasswordComponent } from './components/recuperar-password/recuperar-password.component';
+import { PrincipalComponent } from './components/principal/principal.component';
 import { ModalComponent } from './components/modal/modal.component';
 
-
 const routes: Routes = [
-  {path: '',redirectTo:'login',pathMatch:'full'},
-  {path: '', component: ModalComponent},
+  /*{path: '',redirectTo:'',pathMatch:'full'},*/
+  {path: 'principal', component: PrincipalComponent},
+  {path: 'modal', component: ModalComponent},
   {path: 'home',component:HomeComponent},
   {path: 'about', component:AboutComponent},
   {path: 'contact', component:ContactComponent},
@@ -22,7 +23,7 @@ const routes: Routes = [
   {path: 'register', component:RegisterComponent},
   {path: 'verificar-correo', component:VerificarCorreoComponent},
   {path: 'recuperar-password', component:RecuperarPasswordComponent},
-  {path: '**',redirectTo:'',pathMatch:'full'},
+  {path: '**',redirectTo:'login',pathMatch:'full'},
 ];
 
 @NgModule({

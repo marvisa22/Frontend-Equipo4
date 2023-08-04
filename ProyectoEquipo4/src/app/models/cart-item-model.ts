@@ -1,6 +1,6 @@
 import { Product } from "./product";
 
-export class CarritoItemModel {
+export class CartItemModel {
     productId: number;
     productNombre: string;
     productPrecio: number;

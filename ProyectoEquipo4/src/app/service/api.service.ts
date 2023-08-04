@@ -9,11 +9,21 @@ import { response } from '../models/responsePayPal';
 export class ApiService {
 
   private url = 'http://localhost:4000/create-order';
-  private body: any;
+  private body: any = {
+                        "purchase_units": [
+                            {
+                                "amount": {
+                                    "currency_code": "USD",
+                                    "value": ""
+                                }
+                            }
+                        ]
+                    };
 
   constructor(private http: HttpClient) { }
 
-  public getData (): Observable<response>{
+  public getData (value: string): Observable<response>{
+    this.body.purchase_units[0].amount.value = value;
     return this.http.post<response>(this.url, this.body);
   }
 }

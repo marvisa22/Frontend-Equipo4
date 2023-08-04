@@ -7,15 +7,15 @@ import { Product } from '../models/product';
 })
 export class MensajeService {
 
-  message = new Subject();
+  mensaje = new Subject();
 
   constructor() { }
 
-  sendMessage(product:Product): void {
-    this.message.next(product);
+  sendMensaje(product:Product): void {
+    this.mensaje.next(product);
   }
 
-  getMessage(): Observable<any>{
-    return this.message.asObservable();
+  getMensaje(): Observable<any>{
+    return this.mensaje.asObservable();
   }
 }

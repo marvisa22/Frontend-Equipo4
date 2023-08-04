@@ -20,9 +20,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { VerificarCorreoComponent } from './components/verificar-correo/verificar-correo.component';
 import { RecuperarPasswordComponent } from './components/recuperar-password/recuperar-password.component';
 import { AboutComponent } from './components/about/about.component';
-
-
+import { ProductListComponent } from './components/product-list/product-list.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
+import { CartComponent } from './components/cart/cart.component';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { PrincipalComponent } from './components/principal/principal.component'
 
 //FIREBASE
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
@@ -31,6 +34,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule} from '@angular/fire/compat';
 import { SpinnerComponent } from './spinner/spinner.component';
+
 
 
 
@@ -49,8 +53,12 @@ import { SpinnerComponent } from './spinner/spinner.component';
     VerificarCorreoComponent,
     RecuperarPasswordComponent,
     SpinnerComponent,
-
-    ModalComponent
+    ProductListComponent,
+    ProductItemComponent,
+    ModalComponent,
+    PrincipalComponent,
+    CartComponent,
+    CartItemComponent
 
   ],
   imports: [
