@@ -13,7 +13,6 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { CoursesComponent } from './components/courses/courses.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -37,16 +36,11 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { PayedComponent } from './components/payed/payed.component';
 
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HomeComponent,
-    CoursesComponent,
     AboutComponent,
     LoginComponent,
     ContactComponent,

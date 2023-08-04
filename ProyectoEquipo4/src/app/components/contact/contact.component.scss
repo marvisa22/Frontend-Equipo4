@@ -1,3 +1,82 @@
+@import '../../app.component.scss';
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+.container-menu {
+  margin: auto;
+  max-width: 960px;
+  padding: 20px 5px;
+  margin-top: -20px;
+}
+.navegacion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color:$white ;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+
+
+    span {
+      margin-left: 20px;
+      font-family: 'Audiowide', cursive;
+      font-size: 20px;
+      color: $marron-ocuro;
+    }
+
+      ul {
+          flex: 1;
+          margin-inline-start: 15px;
+          list-style: none;
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 15px;
+          li{
+              padding: 10px;
+              margin-top: 12px;
+                  a {
+                      color: #01031e;
+                      text-decoration: none;
+                      padding: 2px;
+                      transition: color 0.3s;
+                          &:hover {
+                              border-bottom: 2px solid $terciario-color;
+                              color: $terciario-color;
+                          }
+                      }
+                  }
+          }
+
+          &__logo{
+              padding: 10px;
+              width: 60px;
+              &:hover {
+                  transform: scale(1.2);
+                }
+          }
+}
+
+.menu-divider {
+  border: none;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+
+.inicio-sesion{
+  margin-top: -19px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color:#835C3B;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Importación de fuentes de google fonts */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
