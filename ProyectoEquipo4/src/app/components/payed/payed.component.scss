@@ -1,0 +1,54 @@
+@import '../../app.component.scss';
+@import '/src/styles.scss';
+
+/* login.component.scss*/
+.container {
+  margin-top: 50px;
+  max-width: 960px;
+  padding: 20px 5px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.navegacion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white ;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+
+}
+
+.navegacion__logo{
+    padding: 10px;
+    width: 60px;
+}
+
+.container-navegacion {
+    margin: auto;
+    max-width: 960px;
+    padding: 20px 5px;
+    margin-top: -20px;
+  }
+
+h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: forestgreen;
+}
+
+p {
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+  
+
+
+  

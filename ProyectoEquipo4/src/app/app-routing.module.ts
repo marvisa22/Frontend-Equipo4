@@ -10,11 +10,12 @@ import { VerificarCorreoComponent } from './components/verificar-correo/verifica
 import { RecuperarPasswordComponent } from './components/recuperar-password/recuperar-password.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { PayedComponent } from './components/payed/payed.component';
 
 const routes: Routes = [
-  {path: '',redirectTo:'',pathMatch:'full'},
-  {path: 'home',component:HomeComponent},
+  /*{path: '',redirectTo:'',pathMatch:'full'},*/
   {path: 'principal', component: PrincipalComponent},
+  {path: 'home',component:HomeComponent},
   {path: 'modal', component: ModalComponent},
   {path: 'about', component:AboutComponent},
   {path: 'contact', component:ContactComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'register', component:RegisterComponent},
   {path: 'verificar-correo', component:VerificarCorreoComponent},
   {path: 'recuperar-password', component:RecuperarPasswordComponent},
+  {path: 'payed', component:PayedComponent},
   {path: '**',redirectTo:'login',pathMatch:'full'},
 ];
 

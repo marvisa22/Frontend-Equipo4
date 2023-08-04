@@ -34,6 +34,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule} from '@angular/fire/compat';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { PayedComponent } from './components/payed/payed.component';
 
 
 
@@ -58,7 +59,8 @@ import { SpinnerComponent } from './spinner/spinner.component';
     ModalComponent,
     PrincipalComponent,
     CartComponent,
-    CartItemComponent
+    CartItemComponent,
+    PayedComponent
 
   ],
   imports: [

@@ -5,7 +5,7 @@
 
 </div>
     <div class="alert alert-info text-center">
-        <h4>Your Cart </h4>
+        <h4>Tú Carrito </h4>
     </div>
 
 <div *ngIf="cartItems.length > 0">
@@ -28,11 +28,11 @@
         <strong>Total: </strong> {{total}} $
     </div>
 
-    <button class="btn btn-outline-danger btn-block" (click)="emptyCart()">
-        <i class="fas fa-ban">Empty cart </i>
+    <button class="btn btn-outline-danger btn-block me-md-3" (click)="emptyCart()">
+        <i class="fas fa-ban ">Vaciar carrito </i>
     </button>
 
-    <button class="btn btn-outline-danger btn-block" (click)="callApi()">
-        <i class="fas fa-ban">Comprar</i>
+    <button class="btn btn-outline-success btn-block" (click)="callApi()">
+        <i class="fas ">Comprar</i>
     </button>
 </div>
