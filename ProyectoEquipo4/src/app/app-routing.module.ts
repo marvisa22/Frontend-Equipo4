@@ -12,10 +12,10 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { ModalComponent } from './components/modal/modal.component';
 
 const routes: Routes = [
-  /*{path: '',redirectTo:'',pathMatch:'full'},*/
+  {path: '',redirectTo:'',pathMatch:'full'},
+  {path: 'home',component:HomeComponent},
   {path: 'principal', component: PrincipalComponent},
   {path: 'modal', component: ModalComponent},
-  {path: 'home',component:HomeComponent},
   {path: 'about', component:AboutComponent},
   {path: 'contact', component:ContactComponent},
   {path: 'courses', component:CoursesComponent},
