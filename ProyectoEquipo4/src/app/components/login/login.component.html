@@ -1,0 +1,29 @@
+
+<div class="container">
+<div *ngIf="!loading" class="login-box">
+  <img src="../../../assets/images/logo3.jpg" class="avatar" alt="Avatar">
+  <h1>Bienvenido</h1>
+
+  <!--form class="" action="index.html" method="post"-->
+  <form (ngSubmit)="login()" [formGroup]="logUsuario">
+    <!-- USERNAME INPUT -->
+    <label for="username">Usuario</label>
+    <input type="text" placeholder="Introduce tu usuario" formControlName="email">
+    <span *ngIf="logUsuario.get('email')?.hasError('required') && logUsuario.get('email')?.touched" class="alert" style="color: brown;">
+      El <strong>correo</strong> es obligatorio
+    </span>
+    <!-- PASSWORD INPUT -->
+    <label for="password">Contraseña</label>
+    <input type="password" placeholder="Introduce tu contraseña" formControlName="password">
+    <span *ngIf="logUsuario.get('password')?.hasError('required') && logUsuario.get('password')?.touched" class="alert" style="color: brown;">
+      La <strong>contraseña</strong> es obligatoria
+    </span>
+
+    <input type="submit" value="Iniciar Sesión" [disabled]="logUsuario.invalid">
+
+    <a class="centrar-titulo" routerLink="/recuperar-password">Haz olvidado la contraseña?</a><br>
+    <a class="centrar-titulo" routerLink="/register">Registra nueva cuenta</a>
+  </form>
+</div>
+<app-spinner *ngIf="loading"></app-spinner>
+</div>

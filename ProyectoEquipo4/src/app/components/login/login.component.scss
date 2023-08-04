@@ -1,0 +1,92 @@
+@import '../../app.component.scss';
+@import '/src/styles.scss';
+
+/* login.component.scss*/
+.container {
+  margin-top: 50px;
+  max-width: 960px;
+  padding: 20px 5px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+  .login-box {
+    width: 380px;
+    height: 420px;
+    background: $black;
+    color: $white;
+    margin-top: 70px;
+    left: 59%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px 30px;
+  }
+
+  .login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 45%;
+    position: absolute;
+    top: -43px;
+    left: calc(50% - 50px);
+  }
+
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid $zafiro;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: $white;
+    font-size: 16px;
+  }
+
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: $naranja;
+    color: $white;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: $black;
+  }
+
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    color:var($darkgrey);
+}
+
+  .login-box a:hover {
+    color: $white;
+  }
+
+  .centrar-titulo{
+    text-align: center;
+  }

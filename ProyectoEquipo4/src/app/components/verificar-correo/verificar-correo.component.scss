@@ -1,0 +1,86 @@
+
+@import '../../app.component.scss';
+
+.container {
+  margin: auto;
+  max-width: 960px;
+  padding: 20px 5px;
+  margin-top: -20px;
+}
+.card {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: $naranja;
+  color: white;
+  padding: 8px;
+  margin: 4px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+  color:var($darkgrey);
+}
+a:hover {
+  color: $black;
+}
+
+form {
+  text-align: left;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-top: 2px;
+}
+
+input[type=email],
+input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  background:#f2f2f2;
+}
+input[type=password]:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.5);
+}
+#registro{
+  padding: 10px;
+  margin: 20px;
+  margin-right: 10px;
+}

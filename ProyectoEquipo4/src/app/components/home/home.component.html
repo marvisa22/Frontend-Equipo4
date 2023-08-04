@@ -1,0 +1,90 @@
+<div class="container">
+	<nav class="navegacion">
+	  <img src="../assets/images/logo3.jpg" alt="Logo" class="navegacion__logo">
+	  <span>Plural Café</span>
+	
+	  <ul class="navegacion-menu">
+		<li><a routerLink="/home">Inicio</a></li>
+		<li><a routerLink="/about">Nosotros</a></li>
+		<li><a routerLink="/courses">Cursos</a></li>
+		<li><a routerLink="/blog">Blog</a></li>
+		<li><a routerLink="/contact">Contacto</a></li>
+		<li><button type="button" class="inicio-sesion" (click)="logOut()">Inicia Sesión</button></li>
+	  </ul>
+	</nav>
+	<hr class="menu-divider">
+	<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+	  <h1 class="display-4 fw-normal text-body-emphasis">Bienvenido!</h1>
+	  <p class="fs-5 text-body-secondary">{{dataUser?.email}}</p>
+	</div>
+	</div>
+	
+	<div class="container">
+		
+    	<div class="portada">
+			<h1>Conectar a personas de todo el mundo que comparten un interés común en el café
+      		</h1>
+			<a href="#" class="button">Únete a nuestra comunidad</a>
+		</div>
+
+		<div class="tarjetas">
+			<div class="noticia" id="noticia-1">
+				<img class="noticia__img" src="../assets/images/c-barista-pro.jpg" alt="Evento">
+				<div class="noticia__contenido">
+					<h2>Participa en eventos de catación</h2>
+					<p>Eventos o talleres de catación de café en tu área. Estos eventos te permitirán aprender de expertos en catación, descubrir nuevos cafés y compartir experiencias con otros entusiastas del café.</p>
+					<a href="#" class="button">Más información</a>
+				</div>
+			</div>
+
+			<div class="noticia" id="noticia-2">
+				<img class="noticia__img" src="../assets/images/catacion.jpg" alt="Concurso">
+				<div class="noticia__contenido">
+					<h2>Oportunidades Emocionantes</h2>
+					<p>En nuestra amplia selección de cursos, encontrará oportunidades emocionantes para sumergirse en el fascinante mundo del café. Desde cursos introductorios hasta programas especializados, estamos aquí para ayudarlo a expandir sus conocimientos y habilidades en el café. Permítanos guiarlo en un viaje de aprendizaje del café con expertos apasionados.</p>
+					<a href="#" class="button">Más información</a>
+				</div>
+			</div>
+
+			<div class="categorias">
+				<div class="seccion">
+				  <a class="seccion__boton"	href="">
+					<img  src="../assets/images/emprendimiento.jpg" alt="Equipo">
+					<div class="seccion__titulo">
+					  <h3>Emprendimiento</h3>
+					</div>
+				  </a>
+				</div>
+
+				<div class="seccion">
+					<a class="seccion__boton"	href="#">
+						<img src="../assets/images/tostado.jpg" alt="Eventos">
+						<div class="seccion__titulo">
+						<h3>Proceso del tostado</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="seccion">
+					<a class="seccion__boton"	href="#">
+						<img class="seccion__img" src="../assets/images/cafe-taza.jpg" alt=" Podcast">
+						<div class="seccion__titulo">
+						<h3>Podcast</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="seccion">
+					<a class="seccion__boton"	href="#">
+						<img class="seccion__img" src="../assets/images/voluntario.webp" alt="Sección 4">
+						<div class="seccion__titulo">
+						<h3>Comunidad</h3>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+

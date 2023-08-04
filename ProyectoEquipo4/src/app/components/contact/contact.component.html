@@ -1,0 +1,45 @@
+<h1>Formulario de contacto</h1>
+<h3>"¡Ponte en contacto con nosotros para descubrir nuestros Cursos!"</h3>
+
+<div class="contact_form">
+  <div class="formulario">
+
+        <form (ngSubmit)="sendMessage()">
+
+              <p>
+                <label for="nombre" class="colocar_nombre">Nombre
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" id="name"  [(ngModel)]="name" required="obligatorio" placeholder="Escribe tu nombre">
+              </p>
+
+              <p>
+                <label for="email" class="colocar_email">Correo
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="email" id="email" [(ngModel)]="email" required="obligatorio" placeholder="Escribe tu Correo">
+              </p>
+
+              <p>
+                <label for="asunto" class="colocar_asunto">Asunto
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" id="assunto" [(ngModel)]="assunto" required="obligatorio" placeholder="Escribe un asunto">
+              </p>
+
+              <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                  <span class="obligatorio">*</span>
+                </label>
+                                   <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                               </p>
+
+              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+              <p class="aviso">
+                <span class="obligatorio"> * </span>Los campos son obligatorios.
+              </p>
+
+        </form>
+  </div>
+</div>

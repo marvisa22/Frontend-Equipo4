@@ -1,0 +1,43 @@
+
+/********* Globales********/
+
+  $purple: #F26363;
+  $green-claro: #63BF7A;
+  $naranja: #F89722;
+  $zafiro: #7D9BCD;
+  $pink: #E9A8A2;
+  $cream: #F4E1B7;
+  $black: #000000;
+  $white: #fff;
+  $degra: #845EC2;
+  $darkgrey: rgb(227, 226, 226);
+  $fondo-body: #f98181;
+  $primario-color: #4a4a4a;
+  $secundario-color: #f9e9d1;
+  $texto-color:$black;
+  $terciario-color: #e89f31;
+  $rosa-color: #f98181;
+  $hover-boton:#c0392b;
+  $color-boton: #e74c3c;
+  $gradiente: linear-gradient(to bottom, $rosa-color, $terciario-color );
+  $button-blue:rgb(86, 61, 223);
+  $gris:#1e272e;
+  $grisclaro:#585b5e;
+  $letra-logo: 'Manjari';
+  $letra-titulo-aside: 'Lucida Sans Unicode';
+  $letra-parrafo-aside: 'Manjari';
+  $fondo-div:#F5F5F1;
+  $botton-marron: #643c23;
+  $marron-ocuro: #341100;
+  $marron-claro:#996b42;
+  $marron-palido:#cba075;
+  $piel: #ffd9ab;
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: -2px;
+  }
+

@@ -1,0 +1,34 @@
+.redes {
+  margin: 50px;
+}
+.redes p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+.redes .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redes .links a {
+  margin: 0 30px;
+}
+.redes .links a i {
+  font-size: 48px;
+  color: #01031e;
+}
+.redes .links a i:hover {
+  color: #e89f31;
+}
+
+
+
+footer {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

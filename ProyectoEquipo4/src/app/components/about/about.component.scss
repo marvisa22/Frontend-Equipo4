@@ -1,0 +1,49 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+  align-items: left;
+  margin-top: -5px;
+}
+h2 {
+  text-align: center;
+}
+
+p{
+  margin-top: 0;
+  //margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.column {
+  padding-right: 57px;
+  padding-left: 87px;
+  margin-left: -4px;
+
+  &:first-child {
+    text-align: justify;
+
+  }
+
+  &:last-child {
+    text-align: left;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 60px;
+      margin-left: 10px;
+      margin-right: 50px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
