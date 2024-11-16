@@ -7,4 +7,6 @@ export const environment = {
     authDomain: 'plural-coffe.firebaseapp.com',
     messagingSenderId: '470356965635',
     measurementId: 'G-DBQT2G5DNJ',
-  },};
+  },
+  apiUrl: 'http://localhost:4000/api' // URL del backend en desarrollo
+};
