@@ -1,4 +1,5 @@
 export const environment = {
+    production: true,
     firebase: {
       projectId: 'plural-coffe',
       appId: '1:470356965635:web:ae70ba87b9bf448dd2d136',
