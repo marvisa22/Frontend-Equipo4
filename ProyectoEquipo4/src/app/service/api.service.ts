@@ -8,7 +8,8 @@ import { response } from '../models/responsePayPal';
 })
 export class ApiService {
 
-  private url = 'https://backend-equipo4.onrender.com';
+  private url = 'https://backend-equipo4.onrender.com/create-order';
+
   private body: any = {
                         "purchase_units": [
                             {

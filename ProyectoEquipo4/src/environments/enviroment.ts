@@ -9,6 +9,6 @@ export const environment = {
       messagingSenderId: '470356965635',
       measurementId: 'G-DBQT2G5DNJ',
     },
-    apiUrl: 'https://backend-equipo4.onrender.com' // URL del backend en producción
+    apiUrl: 'https://backend-equipo4.onrender.com' 
   };
   
